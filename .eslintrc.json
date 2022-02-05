@@ -2,5 +2,15 @@
   "extends": [
     "next/core-web-vitals",
     "prettier"
-  ]
+  ],
+  "rules": {
+    "sort-imports": "error",
+    "react/function-component-definition": [
+      "error",
+      {
+        "namedComponents": "function-declaration",
+        "unnamedComponents": "arrow-function"
+      }
+    ]
+  }
 }
